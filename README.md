@@ -1,69 +1,52 @@
-# React + TypeScript + Vite
+## Acceso Directo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Puedes acceder a la aplicación directamente desde tu navegador en
+**https://hortifrut.netlify.app**
 
-Currently, two official plugins are available:
+## Instalación y Configuración Local
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Antes de comenzar, asegúrate de tener instalado
+- **Node.js** (versión 20 o superior)
+- **npm** o **yarn** (viene incluido con Node.js)
 
-## Expanding the ESLint configuration
+### Pasos de Instalación
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1. **Descarga el proyecto**
+   \`\`\`bash
+   git clone https://github.com/gerardstrujills/frontend.git
+   cd pokemon-frontend
+   \`\`\`
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+2. **Instala las dependencias**
+   \`\`\`bash
+   npm install
+   \`\`\`
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+3. **Inicia la aplicación**
+   \`\`\`bash
+   npm run dev
+   \`\`\`
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+4. **Abre tu navegador**
+   - Ve a `http://localhost:5173`
+   - La aplicación estará funcionando
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Tecnologías
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Esta aplicación está construida con tecnologías modernas
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **React**
+- **TypeScript**
+- **Vite**
+- **TailwindCSS**
+- **React Query**
+- **Arquitectura Limpia**
+
+## Conexión con el Backend
+
+La aplicación se conecta a nuestro backend:
+`https://hortifrut-backend.up.railway.app/api/v1`
+
+- Datos actualizados de Pokémon
+- Búsqueda optimizada
+- Respuestas rápidas
