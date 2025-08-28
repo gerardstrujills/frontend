@@ -12,20 +12,20 @@ Antes de comenzar, asegúrate de tener instalado
 ### Pasos de Instalación
 
 1. **Descarga el proyecto**
-   \`\`\`bash
+   ```bash
    git clone https://github.com/gerardstrujills/frontend.git
    cd pokemon-frontend
-   \`\`\`
+   ```
 
 2. **Instala las dependencias**
-   \`\`\`bash
+   ```bash
    npm install
-   \`\`\`
+   ```
 
 3. **Inicia la aplicación**
-   \`\`\`bash
+   ```bash
    npm run dev
-   \`\`\`
+   ```
 
 4. **Abre tu navegador**
    - Ve a `http://localhost:5173`
