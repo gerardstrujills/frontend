@@ -14,7 +14,7 @@ Antes de comenzar, asegúrate de tener instalado
 1. **Descarga el proyecto**
    ```bash
    git clone https://github.com/gerardstrujills/frontend.git
-   cd pokemon-frontend
+   cd frontend
    ```
 
 2. **Instala las dependencias**
